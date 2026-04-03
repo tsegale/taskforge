@@ -339,7 +339,7 @@ function StatsBar({ tasks }) {
 
 export default function App() {
   const [tasks, setTasks] = useState(SAMPLE_TASKS);
-  const [modal, setModal] = useState(null); // null | "new" | task-object
+  const [modal, setModal] = useState(null);
   const [filter, setFilter] = useState("All");
   const [search, setSearch] = useState("");
   const [sortBy, setSortBy] = useState("createdAt");
@@ -408,7 +408,7 @@ export default function App() {
                 className="search"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                placeholder="Search tasks…"
+                placeholder="  Search tasks…"
               />
               {search && (
                 <button
@@ -544,7 +544,7 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
 .toolbar { display: flex; flex-direction: column; gap: 12px; margin-bottom: 20px; }
 .search-wrap { position: relative; display: flex; align-items: center; }
 .search-icon { position: absolute; left: 12px; font-size: 18px; color: var(--muted); pointer-events: none; }
-.search { width: 100%; background: var(--surface); border: 1px solid var(--border2); border-radius: var(--r); padding: 10px 12px 10px 38px; color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 14px; outline: none; transition: border-color .2s; }
+.search { width: 100%; background: var(--surface); border: 1px solid var(--border2); border-radius: var(--r); padding: 10px 12px 10px 52px; color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 14px; outline: none; transition: border-color .2s; }
 .search:focus { border-color: var(--accent); }
 .search::placeholder { color: var(--muted); }
 .controls { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
