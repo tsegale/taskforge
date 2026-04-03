@@ -29,8 +29,6 @@
 
 ## 📸 Screenshots
 
-_(Add screenshots here — VERY IMPORTANT)_
-
 ```md
 ![Dashboard](screenshots/dashboard.png)
 ![Task Modal](screenshots/modal.png)
