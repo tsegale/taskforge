@@ -403,12 +403,12 @@ export default function App() {
 
           <div className="toolbar">
             <div className="search-wrap">
-              <span className="search-icon">⌕</span>
+              {/* <span className="search-icon"></span> */}
               <input
                 className="search"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                placeholder="  Search tasks…"
+                placeholder="Search tasks…"
               />
               {search && (
                 <button
